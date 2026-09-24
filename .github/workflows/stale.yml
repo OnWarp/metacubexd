@@ -10,6 +10,7 @@ permissions:
 
 jobs:
   stale:
+    if: github.repository == 'MetaCubeX/metacubexd'
     runs-on: ubuntu-latest
 
     steps:

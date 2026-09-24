@@ -23,6 +23,7 @@ concurrency:
 
 jobs:
   desktop-helper-windows:
+    if: github.repository == 'MetaCubeX/metacubexd'
     runs-on: windows-latest
 
     steps:
@@ -45,6 +46,7 @@ jobs:
         run: pnpm --filter @metacubexd/desktop test:helper-package
 
   unit-test:
+    if: github.repository == 'MetaCubeX/metacubexd'
     runs-on: ubuntu-latest
 
     steps:

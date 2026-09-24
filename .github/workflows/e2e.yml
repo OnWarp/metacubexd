@@ -23,6 +23,7 @@ concurrency:
 
 jobs:
   e2e-test:
+    if: github.repository == 'MetaCubeX/metacubexd'
     runs-on: ubuntu-latest
 
     steps:
